@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+
+import { useNavigate } from "react-router-dom";
+
 import {
   Drawer,
   IconButton,
@@ -10,6 +13,7 @@ import {
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 const CompoDrawer = ({ links }) => {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -27,11 +31,14 @@ const CompoDrawer = ({ links }) => {
         <List>
           {links.map((link, index) => (
             <ListItemButton
-              onClick={() => setOpen(false)}
+              onClick={() => { 
+                navigate(link.url);
+                setOpen(false);
+              }}
               key={`menuItem-${index}`}
               divider
               component="a"
-              href={link.url}
+              // href={link.url}
             >
               <ListItemIcon>
                 <ListItemText sx={{ color: "whitesmoke" }}>
