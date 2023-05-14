@@ -1,5 +1,6 @@
-import * as ReactDOM from "react-dom";
-import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
+// import * as ReactDOM from "react-dom";
+// import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { createMemoryHistory } from "history";
 import { Navbar, linksArray } from "../src/Component/Navbar";
 
@@ -15,8 +16,8 @@ const history = createMemoryHistory();
 
 function App() {
   return (
-    ReactDOM.render(
-  <HashRouter>
+    // ReactDOM.render(
+  // <HashRouter>
     <BrowserRouter location={history.location}>
       <Navbar links={linksArray} />
       <Routes>
@@ -78,7 +79,8 @@ function App() {
         />
       </Routes>
     </BrowserRouter>
-    </HashRouter>)
+    // </HashRouter>)
+    
   );
 }
 
