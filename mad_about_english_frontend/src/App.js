@@ -19,7 +19,7 @@ function App() {
     // ReactDOM.render(
     // <HashRouter>
     <BrowserRouter
-      location={history.location}
+      // location={history.location}
       basename={process.env.PUBLIC_URL}
     >
       <Navbar links={linksArray} />
