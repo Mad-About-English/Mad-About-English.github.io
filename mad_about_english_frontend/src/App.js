@@ -5,7 +5,7 @@ import { Navbar, linksArray } from "../src/Component/Navbar";
 import Home from "./Component/Home";
 import About from "./Component/About";
 import Classes from "./Component/Classes";
-import Location from "../src/Component/Location";
+import { Location, base} from "../src/Component/Location";
 import Events from "./Component/Events";
 import Testimonials from "./Component/Testimonials";
 import Contact from "./Component/Contact";
@@ -29,7 +29,7 @@ function App() {
           path="/about"
           element={
             <>
-             <About />
+              <About />
             </>
           }
         />
@@ -37,7 +37,7 @@ function App() {
           path="/classes"
           element={
             <>
-             <Classes />
+              <Classes />
             </>
           }
         />
@@ -45,7 +45,7 @@ function App() {
           path="/location"
           element={
             <>
-             <Location />
+              <Location homebase={base} />
             </>
           }
         />
@@ -53,7 +53,7 @@ function App() {
           path="/events"
           element={
             <>
-             <Events />
+              <Events />
             </>
           }
         />
@@ -61,7 +61,7 @@ function App() {
           path="/testimonials"
           element={
             <>
-             <Testimonials />
+              <Testimonials />
             </>
           }
         />
@@ -69,7 +69,7 @@ function App() {
           path="/contact"
           element={
             <>
-             <Contact />
+              <Contact />
             </>
           }
         />

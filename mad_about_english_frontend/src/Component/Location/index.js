@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 import NearMeRoundedIcon from "@mui/icons-material/NearMeRounded";
 import CancelPresentationIcon from "@mui/icons-material/CancelPresentation";
@@ -38,14 +39,15 @@ const centerMarker = [
   },
 ]
 
+const base = [{name: "Location", url: "/location"}];
 
-
-const Location = () => {
+const Location = (homebase) => {
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     libraries: ["places"],
   });
   console.log("isLoaded", isLoaded);
+  const navigate = useNavigate();
 
   const [map, setMap] = useState(/** @type google.maps.Map */ (null));
   const [directionsResponse, setDirectionsResponse] = useState(undefined);
@@ -88,12 +90,16 @@ const Location = () => {
     setDuration(results.routes[0].legs[0].duration.text);
   }
 
-  function clearRoute() {
+  function clearRoute(homebase) {
     setDirectionsResponse(undefined);
     setDistance("");
     setDuration("");
     originRef.current.value = "";
-    window.location.reload();
+    // window.location.reload();
+    console.log('this is homebase', homebase)
+    navigate(homebase.url)
+    
+
   }
 
   return (
@@ -293,4 +299,5 @@ const Location = () => {
   );
 }
 
-export default Location
+// export default Location
+export {Location, base}
