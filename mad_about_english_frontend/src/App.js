@@ -17,8 +17,11 @@ const history = createMemoryHistory();
 function App() {
   return (
     // ReactDOM.render(
-  // <HashRouter>
-    <BrowserRouter location={history.location}>
+    // <HashRouter>
+    <BrowserRouter
+      location={history.location}
+      basename={process.env.PUBLIC_URL}
+    >
       <Navbar links={linksArray} />
       <Routes>
         <Route
@@ -80,7 +83,6 @@ function App() {
       </Routes>
     </BrowserRouter>
     // </HashRouter>)
-    
   );
 }
 
