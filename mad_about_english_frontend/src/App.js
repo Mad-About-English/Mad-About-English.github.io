@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { createMemoryHistory } from "history";
 import { Navbar, linksArray } from "../src/Component/Navbar";
 
@@ -73,14 +73,7 @@ function App() {
             </>
           }
         />
-        <Route
-          path="*"
-          element={
-            <>
-              <Home />
-            </>
-          }
-        />
+        <Route path="" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
   );
