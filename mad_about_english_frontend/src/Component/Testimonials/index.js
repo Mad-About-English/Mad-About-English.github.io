@@ -34,32 +34,32 @@ const Testimonials = (props) => {
 
   return (
     <>
-    <Box
-      id="box xxx"
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-
-        width: "100vw",
-        // height: "calc(100vh - 80px)",
-        // top: 75,
-
-        // position: "absolute",
-        // ":hover": {
-        //   boxShadow: "10px 10px 20px #ccc",
-        // },
-      }}
-    >
       <Box
+        id="box xxx"
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: "column",
           justifyContent: "center",
+
+          width: "100vw",
+          // height: "calc(100vh - 80px)",
+          // top: 75,
+
+          // position: "absolute",
+          // ":hover": {
+          //   boxShadow: "10px 10px 20px #ccc",
+          // },
         }}
-        paddingTop={12}
       >
-        {/* <Box
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+          }}
+          paddingTop={12}
+        >
+          {/* <Box
           component="img"
           alt="Logo"
           src="assets/logo/logo.jpeg"
@@ -69,49 +69,54 @@ const Testimonials = (props) => {
           paddingTop={12}
           width={100}
         /> */}
-      </Box>
-      <Slider {...settings} autoplay={true} infinite={true} pauseOnFocus={true}>
-        {images.map((step, index) => (
-          <div key={step[0]}>
-            {Math.abs(activeStep - index) <= maxSteps - 1 ? (
-              <Box
-                padding={3}
-                borderRadius={5}
-                border={15}
-                borderColor="rgb(26, 35, 126, 0.2)"
-                boxShadow="5px 5px 10px #ccc"
-                component="img"
-                sx={{
-                  margin: "auto",
+        </Box>
+        <Slider
+          {...settings}
+          autoplay={true}
+          infinite={true}
+          pauseOnFocus={true}
+        >
+          {images.map((step, index) => (
+            <div key={step[0]}>
+              {Math.abs(activeStep - index) <= maxSteps - 1 ? (
+                <Box
+                  padding={3}
+                  borderRadius={5}
+                  border={15}
+                  borderColor="rgb(26, 35, 126, 0.2)"
+                  boxShadow="5px 5px 10px #ccc"
+                  component="img"
+                  sx={{
+                    margin: "auto",
 
-                  // height: "100%",
-                  display: "block",
-                  ":hover": {
-                    boxShadow: "10px 10px 20px #ccc",
-                  },
-                  height: "480px",
-                  // width:"25%"
-                }}
-                src={step[1]}
-                alt={step[0]}
-              />
-            ) : null}
-          </div>
-        ))}
-      </Slider>
-    </Box>
-    <Box
+                    // height: "100%",
+                    display: "block",
+                    ":hover": {
+                      boxShadow: "10px 10px 20px #ccc",
+                    },
+                    height: "480px",
+                    // width:"25%"
+                  }}
+                  src={step[1]}
+                  alt={step[0]}
+                />
+              ) : null}
+            </div>
+          ))}
+        </Slider>
+      </Box>
+      <Box
         sx={{
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
           paddingTop: 5,
-          paddingRight: 2
+          paddingRight: 2,
         }}
       >
         <FormFont>Note: Best viewed from desktop</FormFont>
       </Box>
-      </>
+    </>
   );
 };
 

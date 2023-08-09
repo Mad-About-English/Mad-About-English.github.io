@@ -16,6 +16,7 @@ const linksArray = [
   { name: "Home", url: "/" },
   { name: "About", url: "/about" },
   { name: "Classes", url: "/classes" },
+  { name: "Timetable", url: "/timetable" },
   { name: "Location", url: "/location" },
   { name: "Events", url: "/events" },
   { name: "Testimonials", url: "/testimonials" },

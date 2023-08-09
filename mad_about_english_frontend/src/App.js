@@ -5,6 +5,7 @@ import { Navbar, linksArray } from "../src/Component/Navbar";
 import Home from "./Component/Home";
 import About from "./Component/About";
 import Classes from "./Component/Classes";
+import Timetable from "./Component/Timetable";
 import { Location, base } from "../src/Component/Location";
 import Events from "./Component/Events";
 import Testimonials from "./Component/Testimonials";
@@ -38,6 +39,14 @@ function App() {
           element={
             <>
               <Classes />
+            </>
+          }
+        />
+        <Route
+          path="/timetable"
+          element={
+            <>
+              <Timetable />
             </>
           }
         />
