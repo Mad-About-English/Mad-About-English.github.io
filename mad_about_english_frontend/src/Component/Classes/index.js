@@ -58,7 +58,7 @@ const Classes = () => {
         >
           <Typography
             sx={{
-              fontSize: 30,
+              fontSize: 20,
             }}
           >
             <b>P3/4 Writing & Oral</b>
