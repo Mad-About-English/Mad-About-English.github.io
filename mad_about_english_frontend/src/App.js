@@ -7,6 +7,7 @@ import About from "./Component/About";
 import Classes from "./Component/Classes";
 import Timetable from "./Component/Timetable";
 import { Location, base } from "../src/Component/Location";
+import Lessons from "./Component/Lessons";
 import Events from "./Component/Events";
 import Testimonials from "./Component/Testimonials";
 import Contact from "./Component/Contact";
@@ -55,6 +56,14 @@ function App() {
           element={
             <>
               <Location homebase={base} />
+            </>
+          }
+        />
+        <Route
+          path="/lessons"
+          element={
+            <>
+              <Lessons />
             </>
           }
         />

@@ -15,9 +15,10 @@ import CompoDrawer from "./CompoDrawer";
 const linksArray = [
   { name: "Home", url: "/" },
   { name: "About", url: "/about" },
-  { name: "Classes", url: "/classes" },
-  { name: "Timetable", url: "/timetable" },
+  // { name: "Classes", url: "/classes" },
+  // { name: "Timetable", url: "/timetable" },
   // { name: "Location", url: "/location" },
+  { name: "Lessons", url: "/lessons" },
   { name: "Events", url: "/events" },
   { name: "Testimonials", url: "/testimonials" },
   // { name: "Contact", url: "/contact" },
