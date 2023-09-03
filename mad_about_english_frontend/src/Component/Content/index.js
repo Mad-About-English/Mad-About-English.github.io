@@ -3,7 +3,7 @@ import { Box, Stack, Typography } from "@mui/material/";
 import { BlueFont } from "../Theme";
 import Footer from "../../Footer";
 
-const Classes = () => {
+const Content = () => {
   return (
     <Box
       sx={{
@@ -33,7 +33,7 @@ const Classes = () => {
           }}
         >
           <BlueFont>
-            <h1>Course Description</h1>
+            <h1>Course Content</h1>
           </BlueFont>
         </Typography>
 
@@ -117,8 +117,9 @@ const Classes = () => {
 
             <p>
               <b>Monthly material fee:</b> $8
-              <br/>
-              Fees are collected monthly between 25th - 27th day of the previous calendar month (i.e in advance)
+              <br />
+              Fees are collected monthly between 25th - 27th day of the previous
+              calendar month (i.e in advance)
             </p>
           </Typography>
         </Box>
@@ -153,4 +154,4 @@ const Classes = () => {
   );
 };
 
-export default Classes;
+export default Content;

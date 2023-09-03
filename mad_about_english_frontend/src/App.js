@@ -4,7 +4,7 @@ import { Navbar, linksArray } from "../src/Component/Navbar";
 
 import Home from "./Component/Home";
 import About from "./Component/About";
-import Classes from "./Component/Classes";
+import Content from "./Component/Content";
 import Timetable from "./Component/Timetable";
 import { Location, base } from "../src/Component/Location";
 import Lessons from "./Component/Lessons";
@@ -36,10 +36,10 @@ function App() {
           }
         />
         <Route
-          path="/classes"
+          path="/content"
           element={
             <>
-              <Classes />
+              <Content />
             </>
           }
         />
