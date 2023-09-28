@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8489d24c.css",
-    "main.js": "/static/js/main.888332b1.js",
+    "main.js": "/static/js/main.d01dd56a.js",
     "static/media/7.Gathering.jpeg": "/static/media/7.Gathering.0a2f8fd1e31e973bfc04.jpeg",
     "static/media/9.Blow.jpeg": "/static/media/9.Blow.b504ebffcfdd1f2c9229.jpeg",
     "static/media/8.Direct.jpeg": "/static/media/8.Direct.49d1e0afa960bc0ec172.jpeg",
@@ -23,8 +23,8 @@
     "static/media/11.Opps.jpeg": "/static/media/11.Opps.e87ef7670e05f0208044.jpeg",
     "static/media/2.Classroom.jpeg": "/static/media/2.Classroom.6f9b0fd10e7fa86cf9c8.jpeg",
     "static/media/3.Entrance and Signage.jpeg": "/static/media/3.Entrance and Signage.72a7f63256a7bbb953cd.jpeg",
-    "static/media/class.jpg": "/static/media/class.0e5b2751dae0d1d2a300.jpg",
     "static/media/1.Front Desk.jpeg": "/static/media/1.Front Desk.b8a5cfe6725c2606b512.jpeg",
+    "static/media/class.jpg": "/static/media/class.116f124f9e7eef3387cd.jpg",
     "static/media/XinTing.jpeg": "/static/media/XinTing.8c8486fe42aba52dac6c.jpeg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -32,10 +32,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.8489d24c.css.map": "/static/css/main.8489d24c.css.map",
-    "main.888332b1.js.map": "/static/js/main.888332b1.js.map"
+    "main.d01dd56a.js.map": "/static/js/main.d01dd56a.js.map"
   },
   "entrypoints": [
     "static/css/main.8489d24c.css",
-    "static/js/main.888332b1.js"
+    "static/js/main.d01dd56a.js"
   ]
 }
