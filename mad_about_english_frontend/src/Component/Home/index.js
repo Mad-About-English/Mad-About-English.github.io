@@ -50,7 +50,6 @@ const Home = () => {
           width={160}
         />
       </Box>
-      <WhiteFont variant="h1"> Mad About English</WhiteFont>
       <Box
         // height='100%'
         maxWidth={1200}
@@ -83,8 +82,8 @@ const Home = () => {
             </ImageListItem>
           ))}
         </ImageList>
-        <WhiteFont variant="h1"> Mad About English</WhiteFont>
       </Box>
+      <WhiteFont variant="h1"> Mad About English</WhiteFont>
     </>
   );
 };
