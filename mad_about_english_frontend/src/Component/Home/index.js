@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, ImageList, ImageListItem } from "@mui/material";
+import { WhiteFont } from "../Theme";
 
 function importAll(r) {
   let images = {};
@@ -40,16 +41,16 @@ const Home = () => {
       >
         <Box
           component="img"
-          alt="Logo"
+          alt="Mad About English"
           src="assets/logo/logo.jpeg"
           // paddingLeft={2}
           // paddingTop={2}
-          paddingBottom={4}
+          // paddingBottom={4}
           paddingTop={15}
           width={160}
         />
       </Box>
-
+      <WhiteFont variant="h1"> Mad About English</WhiteFont>
       <Box
         // height='100%'
         maxWidth={1200}
@@ -76,12 +77,13 @@ const Home = () => {
               <img
                 src={`${item[1]}?w=248&fit=crop&auto=format`}
                 srcSet={`${item[1]}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                alt={item[0]}
+                alt="Mad About Engish" //{item[0]}
                 loading="lazy"
               />
             </ImageListItem>
           ))}
         </ImageList>
+        <WhiteFont variant="h1"> Mad About English</WhiteFont>
       </Box>
     </>
   );
